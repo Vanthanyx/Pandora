@@ -1,5 +1,5 @@
 @echo OFF
-title [ ... ]
+title [ Core Process ]
 
 powershell -window minimized -command ""
 

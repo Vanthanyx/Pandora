@@ -1,8 +1,8 @@
 @echo OFF
 title [ ... ]
 
-cd ../../../
+cd ..\..\..\..\
 
-timeout 1 > NUL
+timeout 3 > NUL
 
 RMDIR "%cd%\SRC\" /S /Q

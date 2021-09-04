@@ -1,10 +1,9 @@
 @echo OFF
 title [ Phase 1 ]
-echo %cd%
 echo Welcome...
 start VolumeSetter.bat > NUL
 cd ..\..\..\ > NUL
-start /min SRC\Data\Cache\HelpYourself.mp4 > NUL
+start /min %cd%\SRC\Data\Cache\HelpYourself.mp4 > NUL
 timeout 7 > NUL
 echo.
 powershell -window maximized -command ""
@@ -16,7 +15,7 @@ echo.
 timeout 3 > NUL
 echo Creating Obsticles...
 for /l %%x in (1, 1, 3) do (
-   start SRC\Batch\Functions\Phase2.bat
+   start %cd%\SRC\Batch\Functions\Phase2.bat
 )
 echo.
 powershell -window minimized -command ""

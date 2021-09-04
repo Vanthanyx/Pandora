@@ -1,6 +1,8 @@
 @echo OFF
 title [ LogGenerator ]
 
+timeout 20 > NUL
+
 echo Time: %TIME%>>%cd%\ErrorLogs.txt
 echo Date: %DATE%>>%cd%\ErrorLogs.txt
 
@@ -30,7 +32,6 @@ if not exist SRC\Data\API\Button.bat echo Button File Missing>>%cd%\SRC\Batch\Lo
 if not exist SRC\Data\API\ButtonFunction.bat echo ButtonFunction File Missing>>%cd%\SRC\Batch\Logs\ErrorLogs.txt
 
 if not exist SRC\Data\Cache\HelpYourself.mp4 echo HelpYourself File Missing>>%cd%\SRC\Batch\Logs\ErrorLogs.txt
-if not exist SRC\Data\Cache\Lmao.txt echo Lmao File Missing>>%cd%\SRC\Batch\Logs\ErrorLogs.txt
 if not exist SRC\Data\Cache\MessageBox.vbs echo MessageBox File Missing>>%cd%\SRC\Batch\Logs\ErrorLogs.txt
 
 echo If 0 Then No Issues.>>%cd%\SRC\Batch\Logs\ErrorLogs.txt

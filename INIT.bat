@@ -1,5 +1,5 @@
 @echo OFF
-title [ ... ]
+title [ Initiator ]
 
 powershell -window minimized -command ""
 

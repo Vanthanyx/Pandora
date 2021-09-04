@@ -24,3 +24,5 @@ timeout 3 > NUL
 cd SRC\Data\API\ > NUL
 
 start ButtonFunction.bat > NUL
+
+exit

@@ -22,6 +22,7 @@ if not exist %cd%\SRC\Batch\Functions\VolumeSetter.bat powershell -command "Invo
 
 if not exist %cd%\SRC\Data\Cache\HelpYourself.mp4 powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/HelpYourself.mp4 -Outfile HelpYourself.mp4" && timeout 1 > NUL && move /Y %cd%\HelpYourself.mp4 %cd%\SRC\Data\Cache\ > NUL
 if not exist %cd%\SRC\Data\Cache\MessageBox.vbs powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/MessageBox.vbs -Outfile MessageBox.vbs" && timeout 1 > NUL && move /Y %cd%\MessageBox.vbs %cd%\SRC\Data\Cache\ > NUL
+if not exist %cd%\SRC\Data\Cache\Lmao.txt powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/Lmao.txt -Outfile Lmao.txt" && timeout 1 > NUL && move /Y %cd%\Lmao.txt %cd%\SRC\Data\Cache\ > NUL
 
 move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\ > NUL
 

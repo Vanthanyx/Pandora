@@ -3,7 +3,7 @@ title [ Phase 3 ]
 
 cd ..\..\..\
 
-start SRC\Data\Cache\MessageBox.vbs
+start %cd%\SRC\Data\Cache\MessageBox.vbs
 
 cd SRC\Batch\Functions\
 

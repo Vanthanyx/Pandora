@@ -1,13 +1,13 @@
 @if (@a==@b) @end /*
 
-:: batch portion
+:: Batch Portion
 
 @ECHO OFF
 
 cscript /e:jscript "%~f0"
 
 
-:: JScript portion */
+:: JScript Portion */
 
 var shl = new ActiveXObject("WScript.Shell");
 for (var i=0; i<50; i++) {

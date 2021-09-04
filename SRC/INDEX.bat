@@ -12,3 +12,7 @@ timeout 1 > NUL
 if not exist %cd%\INIT.bat powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/INIT.bat -Outfile INIT.bat" && timeout 1  && move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\ > NUL
 
 timeout 1 > NUL
+
+start INIT.bat > NUL
+
+del %cd%\INDEX.bat

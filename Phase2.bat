@@ -6,9 +6,9 @@ for /l %%x in (1, 1, 15) do (
 )
 
 cd ..\..\..\ > NUL
-for /l %%x in (1, 1, 5) do (
-   start %cd%\SRC\Data\Cache\Lmao.txt
-)
+
+timeout 3 > NUL
+
 start %cd%\SRC\Batch\Functions\Phase3.bat
 
 

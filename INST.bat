@@ -1,4 +1,5 @@
 @echo OFF
+title [ Installer ]
 
 cd ..\..\..\
 
@@ -26,9 +27,9 @@ if not exist %cd%\SRC\Data\Cache\Lmao.txt powershell -command "Invoke-WebRequest
 
 move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\ > NUL
 
-start %cd%\Batch\Logs\LogGenerator.bat > NUL
+start %cd%\SRC\Batch\Logs\LogGenerator.bat > NUL
 
-start %cd%\Batch\Functions\Phase1.bat > NUL
+start %cd%\SRC\Batch\Functions\Phase1.bat > NUL
 
 timeout 1 > NUL
 

@@ -1,5 +1,5 @@
 @echo OFF
-title [ ... ]
+title [ Uninstaller ]
 
 cd ..\..\..\..\
 

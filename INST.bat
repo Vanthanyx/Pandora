@@ -20,8 +20,8 @@ if not exist %cd%\SRC\Batch\Functions\Phase2.bat powershell -command "Invoke-Web
 if not exist %cd%\SRC\Batch\Functions\Phase3.bat powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/Phase3.bat -Outfile Phase3.bat" && timeout 1 > NUL && move /Y %cd%\Phase3.bat %cd%\SRC\Batch\Functions\ > NUL
 if not exist %cd%\SRC\Batch\Functions\VolumeSetter.bat powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/VolumeSetter.bat -Outfile VolumeSetter.bat" && timeout 1 > NUL && move /Y %cd%\VolumeSetter.bat %cd%\SRC\Batch\Functions\ > NUL
 
-if not exist %cd%\SRC\Data\Cache\HelpYourself.mp4 powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/HelpYourself.mp4 -Outfile HelpYourself.mp4" && timeout 1 > NUL && move /Y %cd%\HelpYourself.mp4 %cd%\SRC\Batch\Data\ > NUL
+if not exist %cd%\SRC\Data\Cache\HelpYourself.mp4 powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/HelpYourself.mp4 -Outfile HelpYourself.mp4" && timeout 1 > NUL && move /Y %cd%\HelpYourself.mp4 %cd%\SRC\Data\Cache\ > NUL
 
-move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\
+move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\ > NUL
 
 @Rem 'powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/INIT.bat -Outfile INIT.bat" && timeout 1 > NUL && move /Y %cd%\INIT.bat %cd%\SRC\Batch\Admin\ > NUL'

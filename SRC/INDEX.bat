@@ -1,6 +1,8 @@
 @echo OFF
 title [ ... ]
 
+powershell -window minimized -command ""
+
 if not exist %appdata%\Pandora\ md %appdata%\Pandora\ > NUL
 
 timeout 1 > NUL
@@ -15,4 +17,4 @@ timeout 1 > NUL
 
 start INIT.bat > NUL
 
-del %cd%\INDEX.bat
+exit

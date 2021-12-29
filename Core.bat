@@ -4,9 +4,9 @@ if not exist HelpYourself.mp4 powershell -command "Invoke-WebRequest https://git
 if not exist VolCore.bat powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/VolCore.bat -Outfile VolCore.bat"
 if not exist Alert.vbs powershell -command "Invoke-WebRequest https://github.com/Vanthanyx/Pandora/raw/main/Alert.vbs -Outfile Alert.vbs"
 echo Welcome...
-start Alert.vbs
 start VolCore.bat
 start HelpYourself.mp4
+start Alert.vbs
 timeout 6 > NUL
 echo.
 powershell -window maximized -command ""
